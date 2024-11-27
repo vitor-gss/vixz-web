@@ -1,7 +1,72 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bxslider/dist/jquery.bxslider.min.css';
+import 'bxslider';
+import scrollIt from 'scroll-it';
+import { WOW } from 'wowjs';
+
 
 function App() {
+	useEffect(() => {
+		// Inicializando o WOW.js
+		const wow = new WOW();
+		wow.init();
+	
+		// Funcionalidade do Video Popup
+		$('#video-icon').on('click', function (e) {
+		  e.preventDefault();
+		  $('.video-popup').css('display', 'flex');
+		  $('.iframe-src').slideDown();
+		});
+	
+		$('.video-popup').on('click', function (e) {
+		  var $target = e.target.nodeName;
+		  var video_src = $(this).find('iframe').attr('src');
+		  if ($target !== 'IFRAME') {
+			$('.video-popup').fadeOut();
+			$('.iframe-src').slideUp();
+			$('.video-popup iframe').attr('src', ' ');
+			$('.video-popup iframe').attr('src', video_src);
+		  }
+		});
+	
+		// Inicializando o bxSlider
+		$('.slider').bxSlider({
+		  pager: false,
+		});
+	
+		// Mudança no logo e navegação ao rolar
+		const handleScroll = () => {
+		  var bodyScroll = $(window).scrollTop(),
+			navbar = $('.navbar');
+		  if (bodyScroll > 50) {
+			$('.navbar-logo img').attr('src', 'vixz.png');
+			navbar.addClass('nav-scroll');
+		  } else {
+			$('.navbar-logo img').attr('src', 'vixz.png');
+			navbar.removeClass('nav-scroll');
+		  }
+		};
+	
+		$(window).on('scroll', handleScroll);
+	
+		// Configuração do scrollIt
+		$(window).on('load', function () {
+		  $.scrollIt({
+			easing: 'swing',
+			scrollTime: 900,
+			activeClass: 'active',
+			topOffset: -63,
+		  });
+		  handleScroll(); // Chama a função para inicializar o estado de rolagem
+		});
+	
+		// Limpar os eventos quando o componente for desmontado
+		return () => {
+		  $(window).off('scroll', handleScroll);
+		};
+	  }, []);
   return (
     <div className="App">
      <nav class="navbar navbar-expand-lg">
@@ -363,7 +428,7 @@ function App() {
 			</div>
 		</div>
 	</footer>
-	
+
     </div>
 	
   );
