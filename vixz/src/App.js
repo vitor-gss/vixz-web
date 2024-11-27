@@ -363,8 +363,11 @@ function App() {
 			</div>
 		</div>
 	</footer>
+	
     </div>
+	
   );
+  
 }
 
 export default App;
