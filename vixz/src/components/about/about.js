@@ -2,7 +2,7 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <section class="about section-padding prelative" data-scroll-index='1'>
+    <section className='pt-4'>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -16,7 +16,7 @@ export const About = () => {
             <div class="section-content text-center">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring"
+                  <div class="icon-box wow fadeInUp"> <i class="fa fa-life-ring"
                       aria-hidden="true"></i>
                     <h5>Vagas de emprego</h5>
                     <p>Tenha acesso a diversas vagas de emprego em um único lugar.
@@ -40,7 +40,7 @@ export const About = () => {
                   </div>
                 </div>
               </div>
-              <a href="#" class="about-btn">Veja mais!</a>
+              <a href="https://www.pudim.com.br/" class="about-btn">Veja mais!</a>
             </div>
           </div>
         </div>
