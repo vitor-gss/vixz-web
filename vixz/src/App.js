@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { About } from './components/main/about';
-import { Features } from './components/main/features';
-import { OurTeam } from './components/main/ourTeam';
-import { Contacts } from './components/main/contacts';
+import { About } from './components/about/about';
+import { Features } from './components/features/features';
+import { OurTeam } from './components/ourteam/ourTeam';
+import { Contacts } from './components/contacts/contacts';
 
 function App() {
   return (
