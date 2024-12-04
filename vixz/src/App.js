@@ -5,6 +5,8 @@ import { About } from './components/about/about';
 import { Features } from './components/features/features';
 import { OurTeam } from './components/ourteam/ourTeam';
 import { Contacts } from './components/contacts/contacts';
+import { DowEnd } from './components/dowend/dowEnd';
+import { Finish } from './components/finish/finish';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <About/>
       <Features/>
       <Contacts/>
+      <DowEnd/>
+      <Finish/>
     </div>
   );
 }
