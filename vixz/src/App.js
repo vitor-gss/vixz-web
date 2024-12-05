@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Initial } from './components/initial/initial';
 import { About } from './components/about/about';
@@ -11,13 +10,13 @@ import { Finish } from './components/finish/finish';
 function App() {
   return (
     <div className="App">
-      <Initial/>
-      <OurTeam/>
-      <About/>
-      <Features/>
-      <Contacts/>
-      <DowEnd/>
-      <Finish/>
+      <Initial/> {/* Do*/}
+      <About/> {/* Fazendo*/}
+      <Features/> {/* Fazendo*/}
+      <OurTeam/> {/* Do*/}
+      <Contacts/> {/* Do*/}
+      <DowEnd/> {/* Do*/}
+      <Finish/> {/* Do*/}
     </div>
   );
 }
