@@ -14,7 +14,7 @@ export const Initial = () => {
                   na jornada profissional, oferecendo uma experiência excepcional para impulsionar sua
                   carreira para novos patamares!</p>
                   <ul className="">
-                    <li className="nav-item wow fadeInUp"> <a className="nav-link entrar" href="login.html">Entrar</a> </li>
+                    <li className="nav-item wow fadeInUpx"> <a className="nav-link entrar" href="login.html">Entrar</a> </li>
                     <li className="nav-item wow fadeInUp"> <a className="nav-link cadastrar" href="cadastro.html">Cadastrar</a> </li>
                   </ul>
                 <ul>
