@@ -24,7 +24,7 @@ export const Initial = () => {
                         data-wow-delay="0.7s" /></a></li>
                 </ul>
               </div>
-            <div className="flex justify-center h-"> <img src="./images/Fórum.png"/>
+            <div className="flex justify-center h-"> <img src="./components/paginaInicial/images/Fórum.png"/>
             </div>
           </div>
         </div>

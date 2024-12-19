@@ -1,5 +1,5 @@
-import { TitleAndSubtitle } from "../titleAndSubtitle/titleAndSubtitle"
-import {Option} from '../features/option'
+import { TitleAndSubtitle } from "../titleAndSubtitle/TitleAndSubtitle"
+import {Option} from './Option'
 
 export const Features = () => {
   return (

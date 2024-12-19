@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card } from './card'
-import { TitleAndSubtitle } from '../titleAndSubtitle/titleAndSubtitle'
+import { Card } from './Card'
+import { TitleAndSubtitle } from '../titleAndSubtitle/TitleAndSubtitle'
 
 export const About = () => {
   return (
