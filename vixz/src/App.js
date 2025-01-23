@@ -1,18 +1,18 @@
 import './App.css';
 import React from 'react';
+<<<<<<< HEAD
 import { ReactDOM } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link, Switch } from 'react-router-dom';
+=======
+import { Routes, Route } from 'react-router-dom';
+>>>>>>> b3bdd61648367f9acdf60e7fd8466f1548bc783c
 
-import { Initial } from './components/initial/initial';
-import { About } from './components/about/about';
-import { Features } from './components/features/features';
-import { OurTeam } from './components/ourteam/ourTeam';
-import { Contacts } from './components/contacts/contacts';
-import { DowEnd } from './components/dowend/dowEnd';
-import { Finish } from './components/finish/finish';
+import PaginaInicial from './components/paginaInicial/PaginaInicial'
+import Login from './components/login/Login'
 
 function App() {
   return (
+<<<<<<< HEAD
     <main>
       <div className="App">
           <Initial /> {/* Do*/}
@@ -38,6 +38,12 @@ function App() {
     </Navbar>
   </>
     </main>
+=======
+    <Routes>
+      <Route path='/' element={<PaginaInicial/>}/>
+      <Route path='/login' element={<Login/>}/>
+    </Routes>
+>>>>>>> b3bdd61648367f9acdf60e7fd8466f1548bc783c
   );
 }
 

@@ -4,14 +4,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+<<<<<<< HEAD
 import About from './components/about/about';
 
+=======
+>>>>>>> b3bdd61648367f9acdf60e7fd8466f1548bc783c
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+<<<<<<< HEAD
     <Routes>
     </Routes>
+=======
+  <App/>
+>>>>>>> b3bdd61648367f9acdf60e7fd8466f1548bc783c
   </BrowserRouter>
 );
 

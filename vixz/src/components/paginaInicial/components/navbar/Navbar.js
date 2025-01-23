@@ -24,13 +24,3 @@ export const Navbar = () => {
     </div>
   )
 }
-
-function Navbar() {
-return(
-  <div>
-    <Link to="/">Home </Link>
-    <Link to="/about">About Us </Link>
-    <Link to="/initial">initial Now </Link>
-  </div>
-)
-}
