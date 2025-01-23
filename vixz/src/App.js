@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { ReactDOM } from 'react-dom/client';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, Switch } from 'react-router-dom';
 
 import { Initial } from './components/initial/initial';
 import { About } from './components/about/about';
@@ -26,7 +26,7 @@ function App() {
 
       <>
     <Navbar>
-      <Switch>
+      
         <Route path="/" components={Initial} exact />
         <Route path="/about" components={About} />
         <Route path="/features" components={Features} />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/contacts" components={Contacts} />
         <Route path="/dowend" components={DowEnd} />
         <Route component={Error} />
-      </Switch>
+      
     </Navbar>
   </>
     </main>
